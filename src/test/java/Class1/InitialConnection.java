@@ -8,9 +8,15 @@ public class InitialConnection {
 
     @Test
     public void connection() {
-        System.setProperty("webdriver.chrome.driver","./drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.com");
     }
 
+    @Test
+    public void connections() {
+        System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.amazon.com");
+    }
 }
